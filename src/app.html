@@ -4,6 +4,36 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/658532a614.js" crossorigin="anonymous"></script>
+		<script>
+			tailwind.config = {
+				theme: {
+					extend: {
+						colors: {
+							primary: {
+								500: '#D5CCFF',
+								600: '#c3b3ff',
+								700: '#a688fd',
+							},
+							secondary: {
+								400: '#2D41A7',
+								500: '#5d51ff',
+								700: '#4425dc',
+								900: '#2B1887',
+								950: '#1a0e67'
+							},
+							neutral: {
+								500: '#F4F5F7',
+								600: '#D9D9D9'
+							},
+							warning: '#ECB800',
+							danger: '#E42C5F'
+						}
+					}
+				}
+			}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">
